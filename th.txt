@@ -1,0 +1,25 @@
+projects: open -->
+cmd : npm create vite
+ reactjs
+ javascript
+ projectname learning25
+ enter
+
+ cd learning25
+ npm install
+ code .
+
+open terminal :choose cmd
+npm run dev
+
+comment:
+index.css
+app.css
+
+
+setup routeer
+npm install react-router-dom
+
+main.js setup : <BrowserRouter>
+
+create folder inside src: component :
