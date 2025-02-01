@@ -5,6 +5,8 @@ import { Navbar } from './components/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import { PropDemo } from './components/PropDemo'
 import { MapDemo1 } from './components/MapDemo1'
+import { UesStateDemo } from './components/UesStateDemo'
+import { UseStateDemo2 } from './components/UseStateDemo2'
 //import './App.css'
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <Routes>
         <Route path='/propdemo' element ={<PropDemo/>}></Route>
         <Route path="/mapdemo" element = {<MapDemo1/>}></Route>
+        <Route path='/useStateDemo' element= {<UseStateDemo2/>}></Route>
       </Routes>
     </div>
   )

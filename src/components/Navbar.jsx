@@ -19,7 +19,10 @@ export const Navbar = () => {
         <Link class="nav-link" to="/mapdemo">map Demo</Link>
       </li>
       
-     
+      
+      <li class="nav-item active">
+        <Link class="nav-link" to="/useStateDemo">useState Demo</Link>
+      </li>
     </ul>
     
   </div>
