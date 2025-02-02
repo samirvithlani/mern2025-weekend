@@ -23,6 +23,10 @@ export const Navbar = () => {
       <li class="nav-item active">
         <Link class="nav-link" to="/useStateDemo">useState Demo</Link>
       </li>
+      
+      <li class="nav-item active">
+        <Link class="nav-link" to="/inputhandling">inputhandling Demo</Link>
+      </li>
     </ul>
     
   </div>

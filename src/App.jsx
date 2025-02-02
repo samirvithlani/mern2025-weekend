@@ -7,6 +7,7 @@ import { PropDemo } from './components/PropDemo'
 import { MapDemo1 } from './components/MapDemo1'
 import { UesStateDemo } from './components/UesStateDemo'
 import { UseStateDemo2 } from './components/UseStateDemo2'
+import { InputHandling } from './components/InputHandling'
 //import './App.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/propdemo' element ={<PropDemo/>}></Route>
         <Route path="/mapdemo" element = {<MapDemo1/>}></Route>
         <Route path='/useStateDemo' element= {<UseStateDemo2/>}></Route>
+        <Route path='/inputhandling' element = {<InputHandling/>}></Route>
       </Routes>
     </div>
   )
