@@ -9,6 +9,8 @@ import { UesStateDemo } from './components/UesStateDemo'
 import { UseStateDemo2 } from './components/UseStateDemo2'
 import { InputHandling } from './components/InputHandling'
 import { FormDemo1 } from './forms/FormDemo1'
+import { FormDemo2 } from './forms/FormDemo2'
+import { FormDemo3 } from './forms/FormDemo3'
 //import './App.css'
 
 function App() {
@@ -22,7 +24,7 @@ function App() {
         <Route path="/mapdemo" element = {<MapDemo1/>}></Route>
         <Route path='/useStateDemo' element= {<UseStateDemo2/>}></Route>
         <Route path='/inputhandling' element = {<InputHandling/>}></Route>
-        <Route path='/formdemo1' element = {<FormDemo1/>}></Route>
+        <Route path='/formdemo1' element = {<FormDemo3/>}></Route>
 
       </Routes>
     </div>
