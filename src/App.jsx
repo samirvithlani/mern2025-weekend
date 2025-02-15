@@ -11,6 +11,7 @@ import { InputHandling } from './components/InputHandling'
 import { FormDemo1 } from './forms/FormDemo1'
 import { FormDemo2 } from './forms/FormDemo2'
 import { FormDemo3 } from './forms/FormDemo3'
+import { FindBomb } from './components/FindBomb'
 //import './App.css'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/useStateDemo' element= {<UseStateDemo2/>}></Route>
         <Route path='/inputhandling' element = {<InputHandling/>}></Route>
         <Route path='/formdemo1' element = {<FormDemo3/>}></Route>
+        <Route path='/findbomb' element ={<FindBomb/>}></Route>
 
       </Routes>
     </div>
