@@ -23,3 +23,17 @@ npm install react-router-dom
 main.js setup : <BrowserRouter>
 
 create folder inside src: component :
+
+
+bakcend --> frontend
+frontend --> backend
+frontend-->delete
+frontend-->update
+
+GET /api/tasks : backend --> frontend
+POST /api/tasks: frontend --> backend
+DELETE /api/tasks/:id
+PUT /api/tasks/:id
+PATCH /api/tasks/:id
+
+package : axios

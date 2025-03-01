@@ -33,6 +33,15 @@ export const Navbar = () => {
       <li class="nav-item active">
         <Link class="nav-link" to="/findbomb">findbomb</Link>
       </li>
+      <li class="nav-item active">
+        <Link class="nav-link" to="/memorygame">memorygame</Link>
+      </li>
+      <li class="nav-item active">
+        <Link class="nav-link" to="/snakegame">snakegame</Link>
+      </li>
+      <li class="nav-item active">
+        <Link class="nav-link" to="/apidemo1">API DEMO 1</Link>
+      </li>
     </ul>
     
   </div>
