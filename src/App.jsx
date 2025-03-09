@@ -16,6 +16,7 @@ import MemoryGame from './components/MemoryGame'
 import { MemoryGame2 } from './components/MemoryGame2'
 import SnakeGame from './components/SnakeGame'
 import { ApiDemo1 } from './components/apis/ApiDemo1'
+import { ApiDemo2 } from './components/apis/ApiDemo2'
 //import './App.css'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path='/memorygame' element ={<MemoryGame2/>}></Route>
         <Route path='/snakegame' element = {<SnakeGame/>}></Route>
         <Route path='/apidemo1' element = {<ApiDemo1/>}></Route>
+        <Route path='/apidemo2' element ={<ApiDemo2/>}></Route>
 
       </Routes>
     </div>
