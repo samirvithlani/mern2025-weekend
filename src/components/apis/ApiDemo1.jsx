@@ -2,12 +2,25 @@ import axios from "axios";
 import React, { useState } from "react";
 import { use } from "react";
 import { CustomLoder } from "../CustomLoder";
+import { Button, Modal } from "react-bootstrap";
 
 export const ApiDemo1 = () => {
 
     const [message, setmessage] = useState("")
     const [users, setusers] = useState([])
     const [isLoading, setisLoading] = useState(false)
+    const [show, setshow] = useState(false)
+
+    const detailUser =(id)=>{
+
+      //api... https://node5.onrender.com/user/user/"+id get
+      //object
+      //useState.. -->user
+      setshow(true)
+    }
+    const handleClose =()=>{
+      setshow(false)
+    }
     const getUsers = async()=>{
 
         const res = await axios.get("https://node5.onrender.com/user/user")
@@ -61,12 +74,30 @@ export const ApiDemo1 = () => {
                 <td>{user.isActive ?"Active" :"Not Active"}</td>
                 <td>
                   <button onClick={()=>{deleteUser(user._id)}}>DELETE</button>
+                  <button onClick={()=>{detailUser(user._id)}}>DETAIL</button>
                 </td>
               </tr>
             })
           }
         </tbody>
       </table>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you are reading this text in a modal!
+          <p>UserName =</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };
