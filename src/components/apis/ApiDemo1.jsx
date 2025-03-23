@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { use } from "react";
 import { CustomLoder } from "../CustomLoder";
 import { Button, Modal } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const ApiDemo1 = () => {
 
@@ -39,7 +40,7 @@ export const ApiDemo1 = () => {
       setisLoading(false)
       console.log(res)
       if(res.status===204){
-        alert("user deleted successfully..")
+       // alert("user deleted successfully..")
         getUsers()
 
       }
@@ -75,6 +76,7 @@ export const ApiDemo1 = () => {
                 <td>
                   <button onClick={()=>{deleteUser(user._id)}}>DELETE</button>
                   <button onClick={()=>{detailUser(user._id)}}>DETAIL</button>
+                  <Link claasName = "btn btn-info" to={`/updateuser/${user._id}`}>update</Link>
                 </td>
               </tr>
             })
