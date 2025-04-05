@@ -18,6 +18,7 @@ import SnakeGame from './components/SnakeGame'
 import { ApiDemo1 } from './components/apis/ApiDemo1'
 import { ApiDemo2 } from './components/apis/ApiDemo2'
 import { UpdateUser } from './components/apis/UpdateUser'
+import { Employees } from './components/Employees'
 //import './App.css'
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path='/apidemo1' element = {<ApiDemo1/>}></Route>
         <Route path='/apidemo2' element ={<ApiDemo2/>}></Route>
         <Route path='/updateuser/:id'element ={<UpdateUser/>}></Route>
+        <Route path='/employee' element ={<Employees/>}></Route>
 
       </Routes>
     </div>

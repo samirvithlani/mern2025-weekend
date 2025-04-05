@@ -45,6 +45,9 @@ export const Navbar = () => {
       <li class="nav-item active">
         <Link class="nav-link" to="/apidemo2">API DEMO 2</Link>
       </li>
+      <li class="nav-item active">
+        <Link class="nav-link" to="/employee">EMPLOYEES</Link>
+      </li>
     </ul>
     
   </div>
