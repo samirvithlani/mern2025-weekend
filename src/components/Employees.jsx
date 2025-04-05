@@ -4,7 +4,7 @@ import { SubEmployee } from './SubEmployee'
 import { EmployeeContex } from './EmployeeContex'
 
 export const Employees = () => {
-    const [employees, setemployees] = useState([
+    const [employees, setEmployees] = useState([
         {
             id:1,
             name:"ram",
@@ -20,7 +20,7 @@ export const Employees = () => {
     <div style={{textAlign:"center"}}>
         <h1>Employees</h1>
         {/* <SubEmployee></SubEmployee> */}
-        <EmployeeContex.Provider value={{employees}}>
+        <EmployeeContex.Provider value={{employees,setEmployees}}>
             <SubEmployee></SubEmployee>
         </EmployeeContex.Provider>
 
