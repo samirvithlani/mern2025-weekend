@@ -4,6 +4,7 @@ import { use } from "react";
 import { CustomLoder } from "../CustomLoder";
 import { Button, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useFetchData } from "../../hooks/ApiService";
 
 export const ApiDemo1 = () => {
 
@@ -11,6 +12,8 @@ export const ApiDemo1 = () => {
     const [users, setusers] = useState([])
     const [isLoading, setisLoading] = useState(false)
     const [show, setshow] = useState(false)
+
+    const {data,loading} = useFetchData("https://node5.onrender.com/user/user")
 
     const detailUser =(id)=>{
 
@@ -66,7 +69,7 @@ export const ApiDemo1 = () => {
         </thead>
         <tbody>
           {
-            users?.map((user)=>{
+            data?.map((user)=>{
               return<tr>
                 <td>{user._id}</td>
                 <td>{user.name}</td>
