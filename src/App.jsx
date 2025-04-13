@@ -20,6 +20,7 @@ import { ApiDemo2 } from './components/apis/ApiDemo2'
 import { UpdateUser } from './components/apis/UpdateUser'
 import { Employees } from './components/Employees'
 import { GenerateNumber } from './components/GenerateNumber'
+import { ToastContainer } from 'react-toastify'
 //import './App.css'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <div>
+      <ToastContainer></ToastContainer>
       <Navbar></Navbar>
       <Routes>
         <Route path='/propdemo' element ={<PropDemo/>}></Route>
