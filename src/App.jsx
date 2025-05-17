@@ -21,6 +21,7 @@ import { UpdateUser } from './components/apis/UpdateUser'
 import { Employees } from './components/Employees'
 import { GenerateNumber } from './components/GenerateNumber'
 import { ToastContainer } from 'react-toastify'
+import { ProductConponent } from './components/ProductConponent'
 //import './App.css'
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         <Route path='/updateuser/:id'element ={<UpdateUser/>}></Route>
         <Route path='/employee' element ={<Employees/>}></Route>
         <Route path='/gennum' element = {<GenerateNumber/>}></Route>
+        <Route path='/prodcomp' element = {<ProductConponent/>}></Route>
 
       </Routes>
     </div>

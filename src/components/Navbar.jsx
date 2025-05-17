@@ -1,7 +1,10 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
+  const cartState = useSelector((state)=>state.cart.cart)
+  console.log(cartState)
   return (
     <div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -51,6 +54,10 @@ export const Navbar = () => {
       <li class="nav-item active">
         <Link class="nav-link" to="/gennum">GEN</Link>
       </li>
+      <li class="nav-item active">
+        <Link class="nav-link" to="/prodcomp">prod comp</Link>
+      </li>
+      <h1 style={{color:"red"}}>{cartState.length}</h1>
     </ul>
     
   </div>
